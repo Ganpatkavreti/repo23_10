@@ -1,12 +1,20 @@
 /* Define a base font size using 'rem' */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    font-family: 'Rowdies', sans-serif;
+}
+p{
+    font-family: 'Playpen Sans', cursive;
+}
+
 html {
     font-size: 62.5%;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -30,9 +38,9 @@ header {
     margin: 0 auto;
 }
 
-.logo img{
+.logo img {
     width: 7rem;
- 
+
 }
 
 .nav-links {
@@ -41,17 +49,20 @@ header {
 }
 
 .nav-links li {
-    margin-right: 3rem; /* 16px */
+    margin-right: 3rem;
+    /* 16px */
 }
 
 .nav-links a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 1.8rem; /* 16px */
+    font-size: 1.8rem;
+    /* 16px */
     transition: all .5s linear;
 }
-.nav-links a:hover{
+
+.nav-links a:hover {
     color: rgb(230, 147, 40);
 }
 
@@ -66,7 +77,8 @@ header {
     display: none;
     position: absolute;
     background-color: #333;
-    min-width: 10rem; /* 160px */
+    min-width: 10rem;
+    /* 160px */
     z-index: 1;
 }
 
@@ -79,7 +91,8 @@ header {
     padding: 1rem;
     text-decoration: none;
     color: #fff;
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
+    /* 16px */
 }
 
 .dropdown-content a:hover {
@@ -87,47 +100,55 @@ header {
 }
 
 /* Search Box Styles */
-.search-container{
+.search-container {
     display: flex;
     align-items: center;
 }
 
 .search-container input[type="text"] {
-    padding: 0.5rem; /* 8px */
+    padding: 0.5rem;
+    /* 8px */
     border: none;
-    border-radius: 0.5rem; /* 8px */
+    border-radius: 0.5rem;
+    /* 8px */
 }
 
 .search-container button {
     background-color: #ff9900;
     color: #fff;
     border: none;
-    border-radius: 0.5rem; /* 8px */
-    padding: 0.5rem 1rem; /* 8px 16px */
+    border-radius: 0.5rem;
+    /* 8px */
+    padding: 0.5rem 1rem;
+    /* 8px 16px */
     cursor: pointer;
-    margin-left: 0.5rem; /* 8px */
+    margin-left: 0.5rem;
+    /* 8px */
 }
 
 
 
 
-.sub-menu{
+.sub-menu {
     width: 100%;
     height: 3rem;
     background-color: rgb(247, 241, 80);
 
 }
-.sub-menu ul{
+
+.sub-menu ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     line-height: 3rem;
 
 }
-.sub-menu ul li{
+
+.sub-menu ul li {
     list-style: none;
 }
-.sub-menu ul li a{
+
+.sub-menu ul li a {
     text-transform: uppercase;
     color: black;
     text-decoration: none;
@@ -136,7 +157,7 @@ header {
 }
 
 
-.submenu_icon{
+.submenu_icon {
     display: none;
 }
 
@@ -145,83 +166,105 @@ header {
 .hero {
     width: 100%;
     height: 85vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/image/hero1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/image/hero1.jpg");
     background-size: cover;
     background-position: center;
-    color: #ffffff;
     text-align: center;
-    padding: 4rem 0; /* 64px */
-    
+    padding: 4rem 0;
+
 }
-.hero-content{
+
+.hero-content {
     padding: 5rem;
 }
 
 .hero-content h1 {
     margin-top: 0rem;
-    font-size: 5.2rem; 
+    font-size: 5.2rem;
     font-weight: bold;
+    color: #000000;
 }
-.hero-content p{
+
+.hero-content p {
     font-size: 1.7rem;
     letter-spacing: .3rem;
     margin-top: 3rem;
     text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 0.2rem black;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 1rem 2rem; /* 16px 32px */
-    background-color: rgb(247, 241, 80);
-    color: #000000;
+    padding: 1rem 2rem;
+    background-color:#FF10F0;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 2rem; /* 8px */
+    border-radius: 2rem;
     font-weight: bold;
-    font-size: 2.5rem; /* 16px */
-    margin-top: 4rem;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    transition: all .5s linear;
+}
+.cta-button:hover{
+    background-color: #1ee43f;
+    transform: translateY(-1rem);
+
 }
 
 /* Featured Courses Section Styles */
 
 
-.courses_1{
-width: 100%;
-height: 100vh;
+.courses_1 {
+    width: 100%;
+    height: 100vh;
+background-color: rgb(224, 224, 152);
 }
-.coures_section{
+
+.coures_section {
     padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(152, 178, 103), rgb(40, 172, 111));
 }
-.cours_left{
+
+.cours_left {
     width: 50%;
     text-align: center;
 }
-.cours_left h1{
+
+.cours_left h1 {
     font-size: 5rem;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
-.cours_left p{
+
+.cours_left p {
     font-size: 3rem;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
-.cours_left .course_1_button{
+
+.cours_left .course_1_button {
     display: inline-block;
-    padding: 1rem 2rem; /* 16px 32px */
-    background-color: rgb(4, 19, 105);
+    padding: 1rem 2rem;
+    background-color: rgb(11, 36, 110);
     color: #ffffff;
     text-decoration: none;
-border-radius: 3rem; /* 8px */
+    border-radius: 3rem;
+    border: none;
     font-weight: bold;
-    font-size: 2.5rem; /* 16px */
+    font-size: 2.5rem;
     margin-top: 3rem;
+    transition: all .4s linear;
 }
-.cours_right{
+.course_1_button:hover{
+    background-color: #e41eb6;
+    transform: translateY(-1rem);
+}
+.cours_right {
     width: 40rem;
     height: 40rem;
     background-image: url("/image/lightbulb.jpg");
@@ -229,19 +272,40 @@ border-radius: 3rem; /* 8px */
     background-position: center;
 }
 
+.courses_2{
+    width: 100%;
+    height: 100vh;
+background-color: #56d3d3;
+
+}
+.courses_2 .coures_section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.courses_2 .coures_section2 .cours_right{
+    width: 40rem;
+    height: 40rem;
+    background-image: url("/image/audio.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
 /* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    font-size: 1.4rem;
 }
-
-
-
-
-
-
+footer .icon{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    
+}
 
 
 
@@ -257,6 +321,7 @@ footer {
     }
 
     .search-box {
-        margin-top: 1rem; /* 16px */
+        margin-top: 1rem;
+        /* 16px */
     }
 }
