@@ -1,0 +1,240 @@
+/* Define a base font size using 'rem' */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #474747;
+    color: #fff;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 0rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 7rem;
+ 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 3rem; /* 16px */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem; /* 16px */
+    transition: all .5s linear;
+}
+.nav-links a:hover{
+    color: rgb(230, 147, 40);
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 10rem; /* 160px */
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem; /* 16px */
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Search Box Styles */
+.search-container{
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 0.5rem; /* 8px */
+    border: none;
+    border-radius: 0.5rem; /* 8px */
+}
+
+.search-container button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem; /* 8px */
+    padding: 0.5rem 1rem; /* 8px 16px */
+    cursor: pointer;
+    margin-left: 0.5rem; /* 8px */
+}
+
+
+
+
+.sub-menu{
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(247, 241, 80);
+
+}
+.sub-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 3rem;
+
+}
+.sub-menu ul li{
+    list-style: none;
+}
+.sub-menu ul li a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+.submenu_icon{
+    display: none;
+}
+
+
+/* Hero Section Styles */
+.hero {
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/image/hero1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 0; /* 64px */
+    
+}
+.hero-content{
+    padding: 5rem;
+}
+
+.hero-content h1 {
+    margin-top: 0rem;
+    font-size: 5.2rem; 
+    font-weight: bold;
+}
+.hero-content p{
+    font-size: 1.7rem;
+    letter-spacing: .3rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem; /* 16px 32px */
+    background-color: rgb(247, 241, 80);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 2rem; /* 8px */
+    font-weight: bold;
+    font-size: 2.5rem; /* 16px */
+    margin-top: 4rem;
+}
+
+/* Featured Courses Section Styles */
+.featured-courses {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem; /* 32px */
+    text-align: center;
+}
+
+.course-card {
+    margin: 2rem; /* 32px */
+    padding: 2rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-0.3125rem);
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles (adjust as needed) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .search-box {
+        margin-top: 1rem; /* 16px */
+    }
+}
