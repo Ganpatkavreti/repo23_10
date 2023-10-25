@@ -50,7 +50,6 @@ header {
 
 .nav-links li {
     margin-right: 3rem;
-    /* 16px */
 }
 
 .nav-links a {
@@ -58,7 +57,6 @@ header {
     color: #fff;
     font-weight: bold;
     font-size: 1.8rem;
-    /* 16px */
     transition: all .5s linear;
 }
 
@@ -78,7 +76,6 @@ header {
     position: absolute;
     background-color: #333;
     min-width: 10rem;
-    /* 160px */
     z-index: 1;
 }
 
@@ -92,7 +89,6 @@ header {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    /* 16px */
 }
 
 .dropdown-content a:hover {
@@ -107,10 +103,8 @@ header {
 
 .search-container input[type="text"] {
     padding: 0.5rem;
-    /* 8px */
     border: none;
     border-radius: 0.5rem;
-    /* 8px */
 }
 
 .search-container button {
@@ -118,12 +112,9 @@ header {
     color: #fff;
     border: none;
     border-radius: 0.5rem;
-    /* 8px */
     padding: 0.5rem 1rem;
-    /* 8px 16px */
     cursor: pointer;
     margin-left: 0.5rem;
-    /* 8px */
 }
 
 
@@ -179,8 +170,8 @@ header {
 }
 
 .hero-content h1 {
-    margin-top: 0rem;
-    font-size: 5.2rem;
+    margin-top: 2rem;
+    font-size: 4rem;
     font-weight: bold;
     color: #000000;
 }
@@ -188,7 +179,7 @@ header {
 .hero-content p {
     font-size: 1.7rem;
     letter-spacing: .3rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
@@ -201,12 +192,13 @@ header {
     background-color:#FF10F0;
     color: #ffffff;
     text-decoration: none;
-    border-radius: 2rem;
+    border-radius: 3rem;
     font-weight: bold;
-    font-size: 2.5rem;
-    margin-top: 5rem;
+    font-size: 3rem;
+    margin-top: 5.5rem;
     transition: all .5s linear;
 }
+
 .cta-button:hover{
     background-color: #1ee43f;
     transform: translateY(-1rem);
@@ -260,6 +252,11 @@ background-color: rgb(224, 224, 152);
     margin-top: 3rem;
     transition: all .4s linear;
 }
+.cours_left .course_1_button a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
 .course_1_button:hover{
     background-color: #e41eb6;
     transform: translateY(-1rem);
@@ -304,6 +301,7 @@ footer {
 footer .icon{
     font-size: 2.5rem;
     margin-top: 1.5rem;
+    letter-spacing: 2rem;
     
 }
 
@@ -322,6 +320,5 @@ footer .icon{
 
     .search-box {
         margin-top: 1rem;
-        /* 16px */
     }
 }
