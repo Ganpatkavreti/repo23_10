@@ -44,8 +44,13 @@ app.get('/tips', (req, res) => {
 app.get('/vedios', (req, res) => {
     res.render("vedios.hbs");
 });
-app.get('/vedios', (req, res) => {
+
+app.get('/electrical', (req, res) => {
     res.render("electrical.hbs");
+});
+
+app.get('/amplifire', (req, res) => {
+    res.render("amplifire.hbs");
 });
 
 
