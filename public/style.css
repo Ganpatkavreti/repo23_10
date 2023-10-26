@@ -17,6 +17,9 @@ html {
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     font-family: Arial, sans-serif;
 }
 
@@ -173,7 +176,7 @@ header {
     margin-top: 2rem;
     font-size: 4rem;
     font-weight: bold;
-    color: #000000;
+    color: #DFFF00;
 }
 
 .hero-content p {
@@ -240,6 +243,7 @@ background-color: rgb(224, 224, 152);
 }
 
 .cours_left .course_1_button {
+    width: 30rem;
     display: inline-block;
     padding: 1rem 2rem;
     background-color: rgb(11, 36, 110);
@@ -297,12 +301,29 @@ footer {
     text-align: center;
     padding: 2rem 0;
     font-size: 1.4rem;
+    margin-top: auto;
 }
-footer .icon{
+footer .social_icon{
     font-size: 2.5rem;
     margin-top: 1.5rem;
     letter-spacing: 2rem;
     
+}
+footer .contact_icon{
+    margin-top: 2rem;
+  
+}
+footer .contact_icon p{
+    font-size: 1.5rem;
+}
+
+.contact_icon .fa-solid{
+    font-size: 1.5rem;
+}
+footer .contact_icon .contact_num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

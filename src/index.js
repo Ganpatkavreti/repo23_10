@@ -18,36 +18,41 @@ app.use(express.static(staticPath));
 app.set("view engine", "hbs");
 app.set("views", viewsPath);
 hbs.registerPartials(partialsPath);
-  
+
 
 // set hbs rout________________________________________________________
 
 
-app.get('/', (req, res) =>{
+app.get('/', (req, res) => {
     res.render("index.hbs");
 });
 
-app.get('/about', (req, res) =>{
+app.get('/about', (req, res) => {
     res.render("about.hbs");
 });
 
 
-app.get('/images', (req, res) =>{
+app.get('/images', (req, res) => {
     res.render("images.hbs");
 });
 
 
-app.get('/tips', (req, res) =>{
+app.get('/tips', (req, res) => {
     res.render("tips.hbs");
 });
 
-app.get('/vedios', (req, res) =>{
+app.get('/vedios', (req, res) => {
     res.render("vedios.hbs");
 });
+app.get('/vedios', (req, res) => {
+    res.render("electrical.hbs");
+});
+
+
 app.get('/', (req, res) => {
-  res.send('Hello, World! This is your Express server.');
+    res.send('Hello, World! This is your Express server.');
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
