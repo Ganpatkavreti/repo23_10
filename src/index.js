@@ -20,7 +20,7 @@ app.set("views", viewsPath);
 hbs.registerPartials(partialsPath);
 
 
-// set hbs rout________________________________________________________
+// set hbs   rout________________________________________________________
 
 
 app.get('/', (req, res) => {

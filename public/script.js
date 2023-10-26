@@ -46,4 +46,13 @@ document.getElementById('searchButton').addEventListener('click', function() {
       });
     }
   }
-  
+  // ====================================================================
+
+
+
+  const mobile_button = document.querySelector(".side_button");
+  const side_link = document.querySelector(".electrical_toic_links");
+  const toggelenav = () =>{
+    side_link.classList.toggle("active");
+  }
+  mobile_button.addEventListener('click', ()=> toggelenav());

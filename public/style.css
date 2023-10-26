@@ -26,7 +26,9 @@ body {
     height: 100%;
 }
 
-/* Navbar Styles */
+/* =============================================================================
+                                Navbar Styles
+   ========================================================================== */
 header {
     background-color: #474747;
     color: #fff;
@@ -101,6 +103,12 @@ header {
     background-color: #555;
 }
 
+.main_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Search Box Styles */
 .search-container {
     display: flex;
@@ -154,12 +162,11 @@ header {
 }
 
 
-.submenu_icon {
-    display: none;
-}
 
+/* =============================================================================
+                                 Hero Section Styles 
+   ========================================================================== */
 
-/* Hero Section Styles */
 .hero {
     width: 100%;
     height: 85vh;
@@ -211,7 +218,10 @@ header {
 
 }
 
-/* Featured Courses Section Styles */
+
+/* =============================================================================
+                                Featured Courses Section Styles 
+   ========================================================================== */
 
 
 .courses_1 {
@@ -296,8 +306,10 @@ background-color: #56d3d3;
     background-position: center;
 }
 
+/* =============================================================================
+                              Footer Styles  
+   ========================================================================== */
 
-/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -329,12 +341,14 @@ footer .contact_icon .contact_num{
     align-items: center;
 }
 
-
-/* pages style */
+/* =============================================================================
+                             pages style  
+   ========================================================================== */
 
 .electrical{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .electrical .electrical_toic_links{
     width: 25%;
@@ -374,18 +388,77 @@ footer .contact_icon .contact_num{
     font-size: 2rem;
 }
 
+.side_button button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transform: translateY(3rem);
+    position: fixed;
+    font-size: 2rem;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    border: none;
+    display: none;
 
-/* Responsive Styles (adjust as needed) */
+
+
+}
+.side_button button .fa-xmark {
+display: none;
+}
+
+/* =============================================================================
+                     Responsive Styles (adjust as needed)  
+   ========================================================================== */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
+    
+html {
+    font-size: 45%;
 
-    .navbar {
-        flex-direction: column;
-    }
 
-    .search-box {
-        margin-top: 1rem;
-    }
+}
+body{
+    background-color: red;
+}
+
+.main_menu{
+    display: none;
+}
+.dropdown {
+   
+    display: block;
+}
+.cours_right {
+    display: none;
+}
+
+
+/* ================================================================================================= */
+.electrical .electrical_toic_links{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    
+}
+.active{
+    display: none;
+}
+
+
+.electrical_toic_links h2{
+    margin-left: 3rem;
+}
+.side_button button{
+    z-index: 1000;
+    display: block;
+}
+.page_content{
+    padding: 1rem;
+}
+
 }
