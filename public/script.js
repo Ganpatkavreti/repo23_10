@@ -3,6 +3,8 @@ document.getElementById('searchButton').addEventListener('click', function() {
     const query = document.getElementById('searchInput').value.toLowerCase();
     const searchResults = document.getElementById('searchResults');
     searchResults.innerHTML = ''; // Clear previous search results
+
+    searchResults.style.height = "40rem"
   
     // Define your website data with page names and their content
     const websiteData = {
@@ -51,8 +53,23 @@ document.getElementById('searchButton').addEventListener('click', function() {
 
 
   const mobile_button = document.querySelector(".side_button");
-  const side_link = document.querySelector(".electrical_toic_links");
+  const side_link = document.querySelector(".side_bar");
   const toggelenav = () =>{
     side_link.classList.toggle("active");
   }
   mobile_button.addEventListener('click', ()=> toggelenav());
+
+
+
+  // ============================================================================
+
+
+
+  // document.querySelector("#searchResults").style.width = "40rem"
+  
+
+  // if(search_box.innerHTML == ""){
+  //   search_box.innerHTML.style.
+  // }else{
+
+  // }

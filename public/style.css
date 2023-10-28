@@ -1,42 +1,14 @@
-/* Define a base font size using 'rem' */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-    font-family: 'Rowdies', sans-serif;
-}
-p{
-    font-family: 'Playpen Sans', cursive;
-}
 
 html {
     font-size: 62.5%;
-    height: 100%;
-
-
 }
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    height: 100%;
-}
-
-/* =============================================================================
-                                Navbar Styles
-   ========================================================================== */
-header {
-    background-color: #474747;
-    color: #fff;
-}
-
 
 .navbar {
-    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 0rem 4rem;
@@ -46,9 +18,8 @@ header {
     margin: 0 auto;
 }
 
-.logo img {
+.navbar .logo img {
     width: 7rem;
-
 }
 
 .nav-links {
@@ -87,9 +58,12 @@ header {
     z-index: 1;
 }
 
+
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 .dropdown-content a {
     display: block;
@@ -103,7 +77,7 @@ header {
     background-color: #555;
 }
 
-.main_menu{
+.main_menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,11 +105,24 @@ header {
     margin-left: 0.5rem;
 }
 
+.shearch_results ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#searchResults{
+    background-color: #bdbfac;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+}
 
 
 
 .sub-menu {
-    width: 100%;
     height: 3rem;
     background-color: rgb(247, 241, 80);
 
@@ -160,6 +147,7 @@ header {
     font-weight: bold;
     font-size: 1.3rem;
 }
+
 
 
 
@@ -202,7 +190,7 @@ header {
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color:#FF10F0;
+    background-color: #FF10F0;
     color: #ffffff;
     text-decoration: none;
     border-radius: 3rem;
@@ -212,7 +200,7 @@ header {
     transition: all .5s linear;
 }
 
-.cta-button:hover{
+.cta-button:hover {
     background-color: #1ee43f;
     transform: translateY(-1rem);
 
@@ -227,7 +215,7 @@ header {
 .courses_1 {
     width: 100%;
     height: 100vh;
-background-color: rgb(224, 224, 152);
+    background-color: rgb(224, 224, 152);
 }
 
 .coures_section {
@@ -238,6 +226,7 @@ background-color: rgb(224, 224, 152);
 }
 
 .cours_left {
+    padding-top: 4rem;
     width: 50%;
     text-align: center;
 }
@@ -269,15 +258,18 @@ background-color: rgb(224, 224, 152);
     margin-top: 3rem;
     transition: all .4s linear;
 }
-.cours_left .course_1_button a{
+
+.cours_left .course_1_button a {
     text-decoration: none;
     color: #ffffff;
 
 }
-.course_1_button:hover{
+
+.course_1_button:hover {
     background-color: #e41eb6;
     transform: translateY(-1rem);
 }
+
 .cours_right {
     width: 40rem;
     height: 40rem;
@@ -286,19 +278,14 @@ background-color: rgb(224, 224, 152);
     background-position: center;
 }
 
-.courses_2{
+.courses_2 {
     width: 100%;
     height: 100vh;
-background-color: #56d3d3;
+    background-color: #56d3d3;
 
 }
-.courses_2 .coures_section2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-}
-.courses_2 .coures_section2 .cours_right{
+
+.courses_2 .coures_section .cours_right {
     width: 40rem;
     height: 40rem;
     background-image: url("/image/audio.jpg");
@@ -318,24 +305,28 @@ footer {
     font-size: 1.4rem;
     margin-top: auto;
 }
-footer .social_icon{
+
+footer .social_icon {
     font-size: 2.5rem;
     margin-top: 1.5rem;
     letter-spacing: 2rem;
-    
+
 }
-footer .contact_icon{
+
+footer .contact_icon {
     margin-top: 2rem;
-  
+
 }
-footer .contact_icon p{
+
+footer .contact_icon p {
     font-size: 1.5rem;
 }
 
-.contact_icon .fa-solid{
+.contact_icon .fa-solid {
     font-size: 1.5rem;
 }
-footer .contact_icon .contact_num{
+
+footer .contact_icon .contact_num {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,57 +336,75 @@ footer .contact_icon .contact_num{
                              pages style  
    ========================================================================== */
 
-.electrical{
+.electrical {
     display: flex;
     justify-content: center;
     position: relative;
 }
-.electrical .electrical_toic_links{
-    width: 25%;
- background-color: rgb(244, 244, 211);
-}
-.electrical_toic_links ul{
-    padding: 3rem;
+
+.electrical_toic_links ul {
+    padding: 1rem 0rem 0rem 3rem;
     font-size: 2rem;
 
 }
-.electrical_toic_links h2{
-    padding: 2rem 0rem 0rem 3rem;
-    font-size: 3rem;
+
+
+.electrical_toic_links ul li a {
+    text-decoration: none;
+    color: black;
 }
 .electrical_toic_links ul li{
     list-style: none;
 }
-.electrical_toic_links ul li a{
-    text-decoration: none;
-    color: black;
-}
 
 
-.electrical .main_electrical_page{
+.electrical .main_electrical_page {
     width: 75%;
-    
+
 }
-.page_content{
+
+.side_bar {
+    padding-top: 5rem;
+    width: 25%;
+    background-color: rgb(244, 244, 211);
+
+}
+
+.page_content {
     padding: 3rem;
 
 }
-.page_content h3{
+
+.page_content h3 {
     padding-left: 3rem;
     font-size: 3rem;
 }
-.page_content p{
+
+.page_content p {
     font-size: 2rem;
 }
 
-.side_button button{
+.side_button {
+    margin-top: 1rem;
+
+}
+.side_button button .fa-xmark {
+    display: none;
+}
+
+.side_bar h2 {
+    padding-left: 3rem;
+    font-size: 3rem;
+}
+
+.side_button button {
     width: 4rem;
     height: 4rem;
-    border-radius: 50%;
     position: absolute;
-    left: 0;
-    transform: translateY(3rem);
+    top: 11rem;
+    left: 1rem;
     position: fixed;
+    border-radius: 50%;
     font-size: 2rem;
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -408,57 +417,205 @@ footer .contact_icon .contact_num{
 
 
 }
-.side_button button .fa-xmark {
-display: none;
-}
-
-/* =============================================================================
-                     Responsive Styles (adjust as needed)  
-   ========================================================================== */
-@media (max-width: 768px) {
-    
-html {
-    font-size: 45%;
 
 
-}
-body{
-    background-color: red;
-}
 
-.main_menu{
-    display: none;
-}
-.dropdown {
+
+
+/* ===================================================================================================
+                                         max-with 360
+=================================================================================================== */
+
+
+@media (max-width: 360px) {
+
+    html {
+        font-size: 40%;
+
+
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 0rem 2rem;
+
+    }
+
+    .main_menu {
+        display: none;
+    }
+
+    .dropdown {
+
+        display: block;
+    }
+
+    .search-container {
+        width: 27rem;
+    }
+
+    .sub-menu ul li a {
+        font-size: .7rem;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .coures_section {
+        padding: 0;
+    }
+
+    .cours_right {
+        display: none;
+    }
+
+    .cours_left {
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+    .cours_left h1 {
+        font-size: 4rem;
+    }
+
+    .cours_left .course_1_button{
+        width: 40rem;
+        height: 9rem;
+        font-size: 3rem;
+       
+    }
+
    
-    display: block;
-}
-.cours_right {
-    display: none;
-}
+    .cours_left p {
+        margin-bottom: 5rem;
+    }
 
 
-/* ================================================================================================= */
-.electrical .electrical_toic_links{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    
-}
-.active{
-    display: none;
-}
+
+    /* ================================================================================================= */
+    .side_bar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .active {
+        display: none;
+    }
 
 
-.electrical_toic_links h2{
-    margin-left: 3rem;
+    .electrical_toic_links h2 {
+        margin-left: 3rem;
+    }
+
+    .side_button button {
+        z-index: 1000;
+        display: block;
+    }
+
+   
+    .page_content {
+        padding: 1rem;
+    }
+
 }
-.side_button button{
-    z-index: 1000;
-    display: block;
-}
-.page_content{
-    padding: 1rem;
-}
+
+/* ===================================================================================================
+                                         max-with 768
+=================================================================================================== */
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 45%;
+
+
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 0rem 2rem;
+
+    }
+
+    .main_menu {
+        display: none;
+    }
+
+    .dropdown {
+
+        display: block;
+    }
+
+    .sub-menu ul li a {
+        font-size: .7rem;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .coures_section {
+        padding: 0;
+    }
+
+    .cours_right {
+        display: none;
+    }
+
+    .cours_left {
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+    .cours_left h1 {
+        font-size: 4rem;
+    }
+
+    .cours_left .course_1_button{
+        width: 40rem;
+        height: 9rem;
+        font-size: 3rem;
+
+       
+    }
+    .cours_left p {
+        margin-bottom: 5rem;
+    }
+
+
+    /* ================================================================================================= */
+    .side_bar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .active {
+        display: none;
+    }
+ 
+
+    .electrical_toic_links h2 {
+        margin-left: 3rem;
+    }
+
+    .side_button button {
+        z-index: 1000;
+        display: block;
+    }
+
+   
+
+   
+    .page_content {
+        padding: 1rem;
+    }
 
 }
