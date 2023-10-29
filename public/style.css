@@ -453,6 +453,10 @@ footer .contact_icon .contact_num {
     .search-container {
         width: 27rem;
     }
+    .search-container input[type="text"] {
+        width: 17rem;
+     }
+     
 
     .sub-menu ul li a {
         font-size: .7rem;
@@ -549,6 +553,10 @@ footer .contact_icon .contact_num {
 
         display: block;
     }
+    .search-container input[type="text"] {
+       width: 17rem;
+    }
+  
 
     .sub-menu ul li a {
         font-size: .7rem;
